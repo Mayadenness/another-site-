@@ -17,8 +17,21 @@ header {
     white-space: nowrap;
     background: rgba(255, 255, 255, 0.1);
     padding: 10px 0;
+    text-align: center; /* Center the GIF */
+    position: fixed; /* Fix the header at the top */
+    top: 0; /* Stick to the top */
+    left: 0; /* Align to the left */
+    width: 100%; /* Full width */
+    z-index: 1000; /* Stay above other content */
 }
 
+/* Ensure the GIF fits within the header */
+header img {
+    max-width: 100%; /* Make the GIF responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Scrolling Header Animation */
 .scrolling-header {
     display: inline-block;
     animation: scrollHeader 20s linear infinite;
@@ -33,6 +46,7 @@ header {
 .home {
     padding: 20px;
     text-align: center;
+    margin-top: 150px; /* Adjust for fixed header */
 }
 
 .product-grid {
@@ -127,6 +141,11 @@ footer {
     padding: 20px;
     background: rgba(255, 255, 255, 0.1);
     margin-top: 20px;
+    position: fixed; /* Fix the footer at the bottom */
+    bottom: 0; /* Stick to the bottom */
+    left: 0; /* Align to the left */
+    width: 100%; /* Full width */
+    z-index: 1000; /* Stay above other content */
 }
 
 footer p {
