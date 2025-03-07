@@ -17,18 +17,11 @@ header {
     white-space: nowrap;
     background: rgba(255, 255, 255, 0.1);
     padding: 10px 0;
-    text-align: center; /* Center the GIF */
     position: fixed; /* Fix the header at the top */
     top: 0; /* Stick to the top */
     left: 0; /* Align to the left */
     width: 100%; /* Full width */
     z-index: 1000; /* Stay above other content */
-}
-
-/* Ensure the GIF fits within the header */
-header img {
-    max-width: 100%; /* Make the GIF responsive */
-    height: auto; /* Maintain aspect ratio */
 }
 
 /* Scrolling Header Animation */
@@ -42,11 +35,24 @@ header img {
     100% { transform: translateX(-100%); }
 }
 
+/* GIF Container (Below Scrolling Header) */
+.gif-container {
+    text-align: center; /* Center the GIF */
+    margin-top: 120px; /* Adjust spacing below the scrolling header */
+    padding: 20px 0; /* Add padding */
+}
+
+/* Ensure the GIF fits within the container */
+.gif-container img {
+    max-width: 100%; /* Make the GIF responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
 /* Home Page */
 .home {
     padding: 20px;
     text-align: center;
-    margin-top: 150px; /* Adjust for fixed header */
+    margin-top: 250px; /* Adjust for fixed header and GIF container */
 }
 
 .product-grid {

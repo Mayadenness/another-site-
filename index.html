@@ -1,47 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Jewelry Site</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crafted with Care | Maya</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header with GIF -->
-    <header>
-        <a href="https://gifyu.com/image/bbQFJ">
-            <img src="https://s3.gifyu.com/images/bbQFJ.gif" alt="Crafted with Care ~ Maya" border="0" />
-        </a>
-    </header>
+  <!-- Audio Element and Play Button -->
+  <div class="audio-controls">
+    <audio id="background-audio">
+      <source src="audio/siteaudio.wav" type="audio/mpeg">
+      <source src="audio/siteaudio.wav" type="audio/wav">
+      Your browser does not support the audio element.
+    </audio>
+    <button id="play-button">Press Me!</button>
+  </div>
 
-    <!-- Home Page -->
-    <div class="home">
-        <div class="product-grid">
-            <div class="product">
-                <img src="images/product1.jpg" alt="Product 1">
-                <p>Product 1</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product">
-                <img src="images/product2.jpg" alt="Product 2">
-                <p>Product 2</p>
-                <button>Add to Cart</button>
-            </div>
-            <!-- Add more products as needed -->
+  <!-- Header -->
+  <header>
+    <div class="scrolling-header">
+        <a href="https://picasion.com/gl/jZiY/"><img src="https://i.picasion.com/gl/92/jZiY.gif" width="1457" height="55" border="0" alt="https://picasion.com/gl/jZiY/" /></a><br />
+    </div>
+  </header>
+
+  <!-- GIF Below Scrolling Header -->
+  <div class="gif-container">
+    <a href="https://gifyu.com/image/bbQFJ">
+      <img src="https://s3.gifyu.com/images/bbQFJ.gif" alt="Crafted with Care ~ Maya" border="0" />
+    </a>
+  </div>
+
+  <!-- Home Page -->
+  <main>
+    <section class="home">
+      <h1>Welcome to Crafted with Care | Maya</h1>
+      <!-- Contact Button -->
+      <button class="contact-button" onclick="window.location.href='contact.html'">Contact Me</button>
+      <div class="product-grid">
+        <!-- Product Placeholder 1 -->
+        <div class="product">
+          <img src="images/placeholder1.jpg" alt="Jewelry 1">
+          <button onclick="window.location.href='product1.html'">View Details</button>
         </div>
-        <button class="contact-button">Contact Us</button>
-    </div>
+        <!-- Product Placeholder 2 -->
+        <div class="product">
+          <img src="images/placeholder2.jpg" alt="Jewelry 2">
+          <button onclick="window.location.href='product2.html'">View Details</button>
+        </div>
+        <!-- Product Placeholder 3 -->
+        <div class="product">
+          <img src="images/placeholder3.jpg" alt="Jewelry 3">
+          <button onclick="window.location.href='product3.html'">View Details</button>
+        </div>
+        <!-- Product Placeholder 4 -->
+        <div class="product">
+          <img src="images/placeholder4.jpg" alt="Jewelry 4">
+          <button onclick="window.location.href='product4.html'">View Details</button>
+        </div>
+        <!-- Product Placeholder 5 -->
+        <div class="product">
+          <img src="images/placeholder5.jpg" alt="Jewelry 5">
+          <button onclick="window.location.href='product5.html'">View Details</button>
+        </div>
+        <!-- Product Placeholder 6 -->
+        <div class="product">
+          <img src="images/placeholder6.jpg" alt="Jewelry 6">
+          <button onclick="window.location.href='product6.html'">View Details</button>
+        </div>
+        <!-- Product Placeholder 7 -->
+        <div class="product">
+          <img src="images/placeholder7.jpg" alt="Jewelry 7">
+          <button onclick="window.location.href='product7.html'">View Details</button>
+        </div>
+        <!-- Product Placeholder 8 -->
+        <div class="product">
+          <img src="images/placeholder8.jpg" alt="Jewelry 8">
+          <button onclick="window.location.href='product8.html'">View Details</button>
+        </div>
+        <!-- Product Placeholder 9 -->
+        <div class="product">
+          <img src="images/placeholder9.jpg" alt="Jewelry 9">
+          <button onclick="window.location.href='product9.html'">View Details</button>
+        </div>
+        <!-- Product Placeholder 10 -->
+        <div class="product">
+          <img src="images/placeholder10.jpg" alt="Jewelry 10">
+          <button onclick="window.location.href='product10.html'">View Details</button>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    <!-- Audio Controls -->
-    <div class="audio-controls">
-        <button id="play-button">Play</button>
-    </div>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Crafted with Care | Maya</p>
+  </footer>
 
-    <!-- Footer -->
-    <footer>
-        <p>2025 - Crafted with Care, Maya</p>
-    </footer>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
+<!-- Forcing GitHub Pages rebuild -->
